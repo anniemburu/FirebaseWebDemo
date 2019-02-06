@@ -16,12 +16,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
 body, html {
     background-color: #f0f2f5;
-    background-image: url(../images/computer-1867758_1920-min.jpg);
     background-repeat: no-repeat;
-    background-position: 100%;
-    background-size: cover;
-    height: 100vh;
-    overflow-x: hidden;
+    height: 100%;
     text-rendering: optimizeLegibility
 }
 
@@ -70,8 +66,8 @@ a, a:focus, a:hover {
 }
 
 .authfy-container {
-    margin-top: 97px;
-    margin-bottom: 97px
+    margin-top: 80px;
+    margin-bottom: 50px
 }
 
 .authfy-panel-left {
@@ -143,9 +139,13 @@ a, a:focus, a:hover {
 }
 
 .brand-col .social-buttons .btn-google {
-    background: #c32f10
+    background: #ffffff;
+    color: #1d2030;
 }
-
+.brand-col .social-buttons .btn-google:hover {
+    color: #ffffff;
+    background: #1d2030;
+}
 .brand-col .social-buttons a > span {
     padding-left: 5px
 }

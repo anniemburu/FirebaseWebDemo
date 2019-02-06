@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Firebase for Web Workshop"/>
+    <meta name="keywords" content="dsc,kisii,university"/>
+    <meta name="author" content="DSC Kisii University"/>
+
+    <title>DSC Firebase Demo</title>
+    <link rel="shortcut icon" type="image/icon" href="images/favicon-16x16.html"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Material+Icons' rel='stylesheet'
+          type='text/css'>
+
+</head>
+
+<body>
+<div id="preload-block">
+    <div class="square-block"></div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="authfy-container col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
+            <div class="col-sm-5 authfy-panel-left">
+                <div class="brand-col">
+                    <div class="headline">
+                        <div class="brand-logo">
+                            <img src="images/brand-logo-white.png" width="200" alt="brand-logo">
+                        </div>
+                        <p>Login using social media to get quick access</p>
+                        <div class="row social-buttons">
+                            <div class="col-xs-4 col-sm-4 col-md-12">
+                                <a href="#" class="btn btn-block btn-google">
+                                    <i class="fab fa-google"></i><span
+                                        class="hidden-xs hidden-sm">Log In with Google</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-12">
+                                <a href="#" class="btn btn-block btn-facebook">
+                                    <i class="fab fa-facebook-f"></i> <span class="hidden-xs hidden-sm">Log In with Facebook</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-12">
+                                <a href="#" class="btn btn-block btn-twitter">
+                                    <i class="fab fa-twitter"></i> <span
+                                        class="hidden-xs hidden-sm">Log In with Twitter</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7 authfy-panel-right">
+                <div class="authfy-login">
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li role="presentation" class="active"><a href="#login" data-toggle="tab">Already a member</a>
+                        </li>
+                        <li role="presentation"><a href="#signup" data-toggle="tab">I am new here</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="login" class="authfy-panel panel-login text-center tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <form name="loginForm" class="loginForm" action="#" method="POST">
+                                        <div class="form-group wrap-input">
+                                            <input type="email" class="form-control email" name="username"
+                                                   placeholder="Email address">
+                                            <span class="focus-input"></span>
+                                        </div>
+                                        <div class="form-group wrap-input">
+                                            <div class="pwdMask">
+                                                <input type="password" class="form-control password" name="password"
+                                                       placeholder="Password">
+                                                <span class="focus-input"></span>
+                                                <span class="fa fa-eye-slash pwd-toggle"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row remember-row">
+                                            <div class="col-xs-6 col-sm-6">
+                                                <label class="checkbox text-left">
+                                                    <input type="checkbox" value="remember-me">
+                                                    <span class="label-text">Remember me</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6">
+                                                <p class="forgotPwd">
+                                                    <a id="forget-lnk" href="#forgot-pwd" data-toggle="tab">Forgot
+                                                        password?</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-lg btn-primary btn-block" type="submit">Login with
+                                                email
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="signup" class="authfy-panel panel-signup text-center tab-pane fade">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <form name="signupForm" class="signupForm" action="#" method="POST">
+                                        <div class="form-group wrap-input">
+                                            <input type="email" class="form-control" name="username"
+                                                   placeholder="Email address">
+                                            <span class="focus-input"></span>
+                                        </div>
+                                        <div class="form-group wrap-input">
+                                            <input type="text" class="form-control" name="fullname"
+                                                   placeholder="Full name">
+                                            <span class="focus-input"></span>
+                                        </div>
+                                        <div class="form-group wrap-input">
+                                            <div class="pwdMask">
+                                                <input type="password" class="form-control" name="password"
+                                                       placeholder="Password">
+                                                <span class="focus-input"></span>
+                                                <span class="fa fa-eye-slash pwd-toggle"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="term-policy text-muted small">This is just a demo but we encourage that you to use accurate information.</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up with
+                                                email
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="forgot-pwd" class="authfy-panel panel-forgot tab-pane fade">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="authfy-heading">
+                                        <h3 class="auth-title">Recover your password</h3>
+                                        <p>Fill in your e-mail address below and we will send you an email with further
+                                            instructions.</p>
+                                    </div>
+                                    <form name="forgetForm" class="forgetForm" action="#" method="POST">
+                                        <div class="form-group wrap-input">
+                                            <input type="email" class="form-control" name="username"
+                                                   placeholder="Email address">
+                                            <span class="focus-input"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-lg btn-primary btn-block" type="submit">Recover your
+                                                password
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

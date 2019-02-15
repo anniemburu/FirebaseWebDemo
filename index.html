@@ -71,13 +71,13 @@
                                 <div class="col-xs-12 col-sm-12">
                                     <form name="loginForm" class="loginForm" action="#" method="POST">
                                         <div class="form-group wrap-input">
-                                            <input type="email" class="form-control email" name="username"
+                                            <input id="txtEmail" type="email" class="form-control email" name="username"
                                                    placeholder="Email address">
                                             <span class="focus-input"></span>
                                         </div>
                                         <div class="form-group wrap-input">
                                             <div class="pwdMask">
-                                                <input type="password" class="form-control password" name="password"
+                                                <input id="txtPassword" type="password" class="form-control password" name="password"
                                                        placeholder="Password">
                                                 <span class="focus-input"></span>
                                                 <span class="fa fa-eye-slash pwd-toggle"></span>
@@ -98,7 +98,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <button class="btn btn-lg btn-primary btn-block" type="submit">Login with
+                                            <button id="btnLogIn" class="btn btn-lg btn-primary btn-block" type="submit">Login with
                                                 email
                                             </button>
                                         </div>
@@ -111,18 +111,18 @@
                                 <div class="col-xs-12 col-sm-12">
                                     <form name="signupForm" class="signupForm" action="#" method="POST">
                                         <div class="form-group wrap-input">
-                                            <input type="email" class="form-control" name="username"
+                                            <input id="txtEmail" type="email" class="form-control" name="username"
                                                    placeholder="Email address">
                                             <span class="focus-input"></span>
                                         </div>
                                         <div class="form-group wrap-input">
-                                            <input type="text" class="form-control" name="fullname"
+                                            <input id="txtName"type="text" class="form-control" name="fullname"
                                                    placeholder="Full name">
                                             <span class="focus-input"></span>
                                         </div>
                                         <div class="form-group wrap-input">
                                             <div class="pwdMask">
-                                                <input type="password" class="form-control" name="password"
+                                                <input id="txtPassword" type="password" class="form-control" name="password"
                                                        placeholder="Password">
                                                 <span class="focus-input"></span>
                                                 <span class="fa fa-eye-slash pwd-toggle"></span>
@@ -132,7 +132,7 @@
                                             <p class="term-policy text-muted small">This is just a demo but we encourage that you to use accurate information.</p>
                                         </div>
                                         <div class="form-group">
-                                            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up with
+                                            <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Sign up with
                                                 email
                                             </button>
                                         </div>
